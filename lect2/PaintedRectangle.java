@@ -1,0 +1,7 @@
+/**
+ * PaintedRectangle
+ */
+public class PaintedRectangle {
+
+    
+}
