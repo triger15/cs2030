@@ -8,7 +8,9 @@ public class Main implements Function<String, Integer>, Predicate<T>  {
 
     // Q2
     Predicate<T> and(Predicate<T> p1, Predicate<T> p2) {
-        return test(p1) && test(p2);
+        return (T x) -> {
+            return p1.test(x) && p2.test(x);
+        };
     }
 
     // Q3
