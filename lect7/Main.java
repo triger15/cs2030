@@ -21,6 +21,10 @@ public class Main implements Function<String, Integer>, Predicate<T>  {
        } 
     };
 
+    // Q4. Currying ?!
+    // x -> y -> z -> f(x,y,z)
+    Function<Integer, Function<Integer, Function<Integer, Double>>> myCurry = x -> y -> z -> f(x,y,z);
+    myCurry.apply(x).apply(y).apply(z);
 
 
 

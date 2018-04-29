@@ -10,7 +10,7 @@ public class Main {
     
     // 1ii
     CompletableFuture.supplyAsync(() -> f())
-                    .thenApplyAynsc(b -> g(b))
+                    .thenApplyAsync(b -> g(b))
                     .thenAcceptAsync(c -> h(c))
                     .join();
 
